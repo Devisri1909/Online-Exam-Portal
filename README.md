@@ -262,9 +262,7 @@ Add screenshots of:
 
 B.Tech – Computer Science and Engineering
 
-**GitHub:** https://github.com/your-github-username
-
-**LinkedIn:** https://linkedin.com/in/your-linkedin-profile
+**GitHub:** (https://github.com/Devisri1909)
 
 ---
 
