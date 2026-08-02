@@ -1,192 +1,273 @@
-# 🚀 Online Exam System – Java (Spring Boot)
+# 📝 Online Examination System
 
-<p align="center">
-<img src="https://img.shields.io/badge/Java-17-blue?style=for-the-badge&logo=java&logoColor=white" alt="Java 17">
-<img src="https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot 3.x">
-<img src="https://img.shields.io/badge/JPA%20%2F%20Hibernate-red?style=for-the-badge" alt="JPA / Hibernate">
-<img src="https://img.shields.io/badge/H2%20Database-lightgrey?style=for-the-badge" alt="H2 Database">
-</p>
-
-A comprehensive **Online Examination System** built using **Spring Boot, Spring Security, Thymeleaf, Bootstrap 5**, and **JPA/Hibernate**.  
-The platform provides a secure and user-friendly environment for **Admins** and **Students** to manage and take online tests effectively.
-
-✔️ Completely Free  
-✔️ Full Source Code Included
+An Online Examination System built using **Spring Boot** that enables administrators to manage examinations and students to attend exams securely through a web interface. The application provides role-based authentication, automated evaluation, and instant result generation.
 
 ---
 
-# 💖 Support & Contact
+## 🚀 Overview
 
-This project is created by **LazyCoder**.
+Traditional paper-based examinations require significant manual effort for creating question papers, conducting exams, and evaluating answer sheets. This project digitizes the entire examination process by providing a secure and efficient web-based platform.
 
-### 📺 Subscribe to My YouTube Channel
-I post tutorials, Java/Python projects, and Spring Boot content regularly.
+The system supports two user roles:
 
-👉 **Subscribe Here:**  
-https://www.youtube.com/c/LazyCoderOnline?sub_confirmation=1
+- **Administrator** – Creates and manages exams, questions, and student records.
+- **Student** – Registers, logs in securely, attends examinations, and views results.
 
 ---
 
-### 🤝 Need Help or Want a Custom Project?
+## 🌟 Major Features
 
-📌 Facing issues with this project?  
-📌 Want a custom Java/Spring Boot/Django project?
+### Administrator
 
-**I am available for freelance development.**
+- Authentication using Spring Security
+- Create and manage examinations
+- Add, edit, and delete questions
+- Monitor registered students
+- View examination results
+- Manage user accounts
 
-📱 **WhatsApp:** https://wa.me/919572181024
+### Student
 
-<p align="center">
-<a href="https://www.youtube.com/c/LazyCoderOnline?sub_confirmation=1">
-<img src="https://img.shields.io/badge/Subscribe-LazyCoder-red?style=for-the-badge&logo=youtube" >
-</a>
+- New user registration
+- Secure login
+- View available exams
+- Attempt online examinations
+- Automatic answer evaluation
+- Instant score display
+- View examination history
+- Update profile details
 
-<a href="https://wa.me/919572181024">
-<img src="https://img.shields.io/badge/WhatsApp-Chat%20Now-green?style=for-the-badge&logo=whatsapp" >
-</a>
-</p>
+---
+
+# 🛠 Tech Stack
+
+### Backend
+
+- Java 17
+- Spring Boot
+- Spring MVC
+- Spring Security
+- Spring Data JPA
+- Hibernate
+
+### Frontend
+
+- Thymeleaf
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+
+### Database
+
+- H2 Database
+
+### Build Tool
+
+- Maven
+
+---
+
+# 🏗 Architecture
+
+```
+Presentation Layer
+        │
+Thymeleaf Templates
+        │
+Spring MVC Controllers
+        │
+Business Logic (Services)
+        │
+Spring Data JPA
+        │
+H2 Database
+```
+
+---
+
+# 📁 Project Structure
+
+```
+online-exam-system
+│
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   ├── config
+│   │   │   ├── controller
+│   │   │   ├── model
+│   │   │   ├── repository
+│   │   │   ├── service
+│   │   │   └── OnlineExamApplication.java
+│   │   │
+│   │   ├── resources
+│   │   │   ├── static
+│   │   │   ├── templates
+│   │   │   └── application.properties
+│   │
+│   └── test
+│
+├── data
+├── uploads
+├── pom.xml
+└── README.md
+```
+
+---
+
+# ⚙ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/yourusername/online-exam-system.git
+```
+
+### Move into Project Folder
+
+```bash
+cd online-exam-system
+```
+
+### Run the Application
+
+Windows
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+Linux / macOS
+
+```bash
+./mvnw spring-boot:run
+```
+
+---
+
+# 🌐 Access Application
+
+```
+http://localhost:7890
+```
+
+---
+
+# 🗄 Database
+
+### H2 Console
+
+```
+http://localhost:7890/h2-console
+```
+
+### JDBC URL
+
+```
+jdbc:h2:file:./data/examdb
+```
+
+### Username
+
+```
+sa
+```
+
+### Password
+
+```
+password
+```
+
+---
+
+# 🔒 Authentication
+
+The application uses **Spring Security** with **BCrypt Password Encryption**.
+
+Two user roles are supported:
+
+- ADMIN
+- STUDENT
+
+Access permissions are enforced using role-based authorization.
+
+---
+
+# 📊 Functional Workflow
+
+```
+Student Registration
+        ↓
+Student Login
+        ↓
+Available Exams
+        ↓
+Take Examination
+        ↓
+Automatic Evaluation
+        ↓
+Score & Result
+```
+
+---
+
+# 💡 Highlights
+
+- Responsive User Interface
+- Secure Authentication
+- Role-Based Authorization
+- Automatic Result Calculation
+- Exam & Question Management
+- Persistent Database Storage
+- MVC Architecture
+- Clean Code Structure
+
+---
+
+# 🔮 Future Improvements
+
+- Email Verification
+- Password Recovery
+- JWT Authentication
+- MySQL/PostgreSQL Support
+- Random Question Generation
+- Negative Marking
+- Leaderboard
+- PDF Result Download
+- Email Notifications
+- Online Proctoring using Webcam
 
 ---
 
 # 📸 Screenshots
 
+Add screenshots of:
 
-<table width="100%">
-
-
-<tr>
-<td align="center"><b>Exam Page (with Pagination)</b></td>
-</tr>
-<tr>
-<td align="center"><img src="https://github.com/sumitkumar1503/online-exam-system/blob/master/screenshots/exampage.png" width="90%"></td>
-</tr>
-
-<tr>
-<td align="center"><b>Admin Dashboard</b></td>
-</tr>
-<tr>
-<td align="center"><img src="https://github.com/sumitkumar1503/online-exam-system/blob/master/screenshots/admindashboard.png?raw=true" width="90%"></td>
-</tr>
-
-<tr>
-<td align="center"><b>Manage Exam</b></td>
-</tr>
-<tr>
-<td align="center"><img src="https://github.com/sumitkumar1503/online-exam-system/blob/master/screenshots/adminmanageexam.png" width="90%"></td>
-</tr>
-
-<tr>
-<td align="center"><b>Manage Question</b></td>
-</tr>
-<tr>
-<td align="center"><img src="https://github.com/sumitkumar1503/online-exam-system/blob/master/screenshots/adminmanagequestion.png" width="90%"></td>
-</tr>
-</table>
+- Home Page
+- Login Page
+- Registration Page
+- Admin Dashboard
+- Student Dashboard
+- Exam Page
+- Question Management
+- Result Page
 
 ---
 
-# ✨ Features
+# 👨‍💻 Developed By
 
-## 👨‍💻 Admin Features
-- Secure Admin Login
-- Stats Dashboard (Total Students, Exams, Questions, Submissions)
-- **Exam CRUD** (title, duration, description)
-- **Question CRUD** per exam
-- Cascade deletes for exams → questions → results
-- Protect answered questions from accidental delete
-- Manage Students
-- Reset Student Password
-- Delete Student Account (cascade all related data)
-- View all submissions for any exam
+**Devi Sri Amrutha Avidi**
 
----
+B.Tech – Computer Science and Engineering
 
-## 🧑‍🎓 Student Features
-- Student Registration (Full Name, Email, Mobile, Profile Picture)
-- Secure Login
-- Dashboard with KPIs + Performance Chart
-- Take Exam (paginated interface + question palette)
-- Live Timer (auto submit)
-- Instant Results (score, percentage, pass/fail)
-- Detailed Review Page (correct vs incorrect answers)
-- Profile Update
-- Upload New Profile Picture
-- Change Password
-- View All Previous Exam Results
+**GitHub:** https://github.com/your-github-username
 
----
-
-# 🛠️ Tech Stack
-
-| Layer | Technology                                 |
-|------|--------------------------------------------|
-| Backend | Spring Boot 3, Spring Security 6           |
-| Frontend | Thymeleaf, Html, Bootstrap 5, Chart.js     |
-| Database | H2 (file-based) (configurable to other DB) |
-| ORM | Hibernate / JPA                            |
-| Build | Maven                                      |
-| Storage | Local File System for images               |
-
----
-
-# 🚀 How to Run the Project
-
-### ✔️ Prerequisites
-- Java **17+**
-- Maven
-- Any IDE (IntelliJ, VS Code, Eclipse)
-
----
-
-### ✔️ Clone the Repository
-
-```bash
-git clone https://github.com/sumitkumar1503/online-exam-system.git
-cd online-exam-system
-```
-
----
-
-### ✔️ Start the Application
-
-Open the project → Run:
-
-`OnlineExamApplication.java`
-
-Server will start at:
-
-👉 http://localhost:7890
-
----
-
-# 🗄️ Database (H2)
-
-Access H2 Console:
-
-👉 http://localhost:7890/h2-console
-
-```
-JDBC URL : jdbc:h2:file:./data/examdb  
-Username : sa  
-Password : password
-```
-
----
-
-# 🔐 Default Admin User
-
-| Username | Password |
-|---------|----------|
-| admin | adminpass |
+**LinkedIn:** https://linkedin.com/in/your-linkedin-profile
 
 ---
 
 # 📜 License
 
-This project is **open-source** under the **MIT License**.
-
----
-
-<p align="center">
-<strong>Happy Coding ❤️</strong>
-</p>
+This project is developed for educational and learning purposes.
